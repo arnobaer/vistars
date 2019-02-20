@@ -14,13 +14,13 @@ pip install git+https://github.com/arnobaer/vistars.git
 vistars
 ```
 
-Specify an alternate image source uisng argument `url`
+Specify an alternate image source uisng argument `url`.
 
 ```bash
 vistars http://example.com/image.png
 ```
 
-Set a custom update interval in seconds using option `-i <seconds>`
+Set a custom update interval in seconds using option `-i <seconds>` (default is 25 seconds).
 
 ```bash
 vistars -i 10
