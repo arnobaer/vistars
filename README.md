@@ -14,7 +14,7 @@ pip install git+https://github.com/arnobaer/vistars.git
 vistars
 ```
 
-Specify an alternate image source uisng argument `url`.
+Specify an alternate image source using argument `url`.
 
 ```bash
 vistars http://example.com/image.png
