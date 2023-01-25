@@ -5,12 +5,12 @@ with open("README.md") as f:
 
 setup(
     name="vistars",
-    version="1.0.0",
+    version="1.0.1",
     author="Bernhard Arnold",
     author_email="bernhard.arnold@cern.ch",
     description=("Simple CERN vistars viewer."),
     license="GPLv3",
-    url = "http://github.com/arnobaer/vistars",
+    url = "https://github.com/arnobaer/vistars",
     py_modules=['vistars'],
     install_requires=["PyQt5"],
     entry_points="""

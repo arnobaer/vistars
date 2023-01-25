@@ -4,20 +4,20 @@
 # Simple CERN vistars viewer.
 #
 
-from PyQt5 import QtCore, QtGui
-from PyQt5 import QtWidgets
-
 import argparse
 import logging
+import os
 import signal
+import ssl
+import sys
 import time
 from urllib.request import urlopen
-import ssl
-import sys, os
 
-__version__ = "1.0.0"
+from PyQt5 import QtCore, QtGui, QtWidgets
 
-DEFAULT_URL = 'https://vistar-capture.web.cern.ch/vistar-capture/lhc1.png'
+__version__ = "1.0.1"
+
+DEFAULT_URL = 'https://vistar-capture.s3.cern.ch/lhc1.png'
 DEFAULT_INTERVAL = 25 # sec
 DEFAULT_TIMEOUT = 5 # sec
 
@@ -144,7 +144,6 @@ class MainWindow(QtWidgets.QWidget):
         """Start timer to hide mouse if not moved."""
         self._mouseMoveTimer.stop()
         while QtWidgets.QApplication.overrideCursor():
-
             QtWidgets.QApplication.restoreOverrideCursor()
         self._mouseMoveTimer.start(self._mouseMoveTimeout)
 

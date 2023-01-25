@@ -22,7 +22,7 @@ Specify an alternate image source using argument `url`. Have a look at [CERN vis
 
 ```bash
 # display LHC luminosity
-vistars https://vistar-capture.web.cern.ch/vistar-capture/lhclumi.png
+vistars https://vistar-capture.s3.cern.ch/lhclumi.png
 ```
 
 Set a custom update interval in seconds using option `-i <seconds>` (default is 25 seconds).
